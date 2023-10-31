@@ -1,0 +1,118 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "MirrorRealmsBattleServer/1.0.0": {
+        "dependencies": {
+          "MirrorRealmsNet": "1.0.0",
+          "protobuf-net": "3.2.16"
+        },
+        "runtime": {
+          "MirrorRealmsBattleServer.dll": {}
+        }
+      },
+      "Kcp/2.6.1": {
+        "runtime": {
+          "lib/net6.0/Kcp.dll": {
+            "assemblyVersion": "2.6.1.0",
+            "fileVersion": "2.6.1.0"
+          }
+        }
+      },
+      "protobuf-net/3.2.16": {
+        "dependencies": {
+          "protobuf-net.Core": "3.2.16"
+        },
+        "runtime": {
+          "lib/net6.0/protobuf-net.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.2.16.54102"
+          }
+        }
+      },
+      "protobuf-net.Core/3.2.16": {
+        "dependencies": {
+          "System.Collections.Immutable": "7.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/protobuf-net.Core.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.2.16.54102"
+          }
+        }
+      },
+      "System.Collections.Immutable/7.0.0": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/System.Collections.Immutable.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51805"
+          }
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
+      "MirrorRealmsNet/1.0.0": {
+        "dependencies": {
+          "Kcp": "2.6.1",
+          "protobuf-net": "3.2.16"
+        },
+        "runtime": {
+          "MirrorRealmsNet.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MirrorRealmsBattleServer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Kcp/2.6.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-l/O2lwSZAlLThJ6QMCqwyl4VMtrqMcvt87MiRdxCxpbeL1aHp1TLUQKKPjBH7d+BxCx/+/2n3zZJYvnETt5j7A==",
+      "path": "kcp/2.6.1",
+      "hashPath": "kcp.2.6.1.nupkg.sha512"
+    },
+    "protobuf-net/3.2.16": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-W6RM2B2f5O7SigBGfkXFYzI/a7Mks+rCHtuGlE/b5O3NMupDon7I0akjCLhrfcnqIfdWDkDafseav/MnIzUSHA==",
+      "path": "protobuf-net/3.2.16",
+      "hashPath": "protobuf-net.3.2.16.nupkg.sha512"
+    },
+    "protobuf-net.Core/3.2.16": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZFoY0lfMUWGJ4RoyI0oNj2o2l8t08n3k27YyDD0kYWQ+vXj0hTbWEwYWOpGAfCWvyUPkq9Jcc/4uR74GICZL2g==",
+      "path": "protobuf-net.core/3.2.16",
+      "hashPath": "protobuf-net.core.3.2.16.nupkg.sha512"
+    },
+    "System.Collections.Immutable/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dQPcs0U1IKnBdRDBkrCTi1FoajSTBzLcVTpjO4MBCMC7f4pDOIPzgBoX8JjG7X6uZRJ8EBxsi8+DR1JuwjnzOQ==",
+      "path": "system.collections.immutable/7.0.0",
+      "hashPath": "system.collections.immutable.7.0.0.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
+      "path": "system.runtime.compilerservices.unsafe/6.0.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    },
+    "MirrorRealmsNet/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

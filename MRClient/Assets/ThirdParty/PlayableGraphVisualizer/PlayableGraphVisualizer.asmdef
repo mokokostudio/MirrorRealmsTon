@@ -1,0 +1,18 @@
+{
+    "name": "PlayableGraphVisualizer",
+    "rootNamespace": "",
+    "references": [
+        "GUID:4df14fdef1672e744a21146d11e3a1f6"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

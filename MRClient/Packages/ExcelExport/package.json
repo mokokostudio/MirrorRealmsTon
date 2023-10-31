@@ -1,0 +1,10 @@
+{
+  "name": "com.aureon.excelexport",
+  "version": "0.1.0",
+  "displayName": "Excel Export",
+  "description": "Excel Export.",
+  "category": "Runtime",
+  "keywords": [
+    "Excel Export"
+  ]
+}

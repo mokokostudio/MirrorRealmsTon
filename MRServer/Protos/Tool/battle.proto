@@ -1,0 +1,66 @@
+syntax = "proto3";
+package battle;
+option csharp_namespace = "MR.Proto.Battle";
+
+message JoinRoomRequest{
+    string name = 1;
+}
+
+message JoinRoomResponse{
+    int32 code = 1;//成功，名字重复，游戏已开始
+    RoomData room_data = 2;
+}
+
+message LeaveRoomRequest{
+}
+
+message LeaveRoomResponse{
+    int32 code = 1;//成功，游戏已开始
+}
+
+message RoomData{
+    repeated PlayerData players = 1;//座位上的玩家
+    repeated string observers = 2;//观众
+}
+
+message PlayerData{
+    string name = 1;
+    uint64 charater = 2;//角色
+    repeated uint64 weapon = 3;//武器
+}
+
+message SitDownRequest{
+    int32 seat = 1;//目标座位
+}
+
+message SitDownResponse{
+    int32 code = 1;//成功，目标有人，游戏已开始
+}
+
+message StandUpRequest{
+}
+
+message StandUpResponse{
+    int32 code = 1;//成功，游戏已开始
+}
+
+message MoveRequest{
+    int32 seat = 1;//目标座位
+}
+
+message MoveResponse{
+    int32 code = 1;//成功，目标有人，游戏已开始
+}
+
+message PlayerUpdateNotify{
+    int32 seat = 1;
+    PlayerData player = 2;
+}
+
+message UserJoinNotify{
+    string name = 1;
+}
+
+message UserLeaveNotify{
+    string name = 1;
+}

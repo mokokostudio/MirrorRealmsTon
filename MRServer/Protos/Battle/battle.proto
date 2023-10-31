@@ -1,0 +1,94 @@
+syntax = "proto3";
+package battle;
+option csharp_namespace = "MR.Proto.Battle";
+
+import "google/protobuf/descriptor.proto";
+// 定义消息ID的option
+extend google.protobuf.MessageOptions { MessageID MsgID = 999999; }
+
+enum MessageID{
+    MSG_NONE = 0;
+
+    MSG_ENTER_ROOM_CS = 100001;
+    MSG_ENTER_ROOM_S2C = 101001;
+
+    MSG_EXIT_ROOM_C2S = 100002;
+    MSG_EXIT_ROOM_S2C = 101002;
+
+    MSG_SIT_DOWN_C2S = 100003;
+    MSG_SIT_DOWN_S2C = 101003;
+
+    MSG_STAND_UP_C2S = 100004;
+    MSG_STAND_UP_S2C = 101004;
+
+    MSG_MOVE_C2S = 100005;
+    MSG_MOVE_S2C = 101005;
+
+    PLAYER_UPDATE_S2C = 102001;
+    OBSERVER_ARRIVE_S2C = 102002;
+    OBSERVER_LEAVE_S2C = 102003;
+}
+
+message EnterRoomC2S{
+    option (MsgID) = MSG_ENTER_ROOM_CS;
+    string name = 1;
+}
+
+message EnterRoomS2C{
+    int32 code = 1;//成功，名字重复，游戏已开始
+    RoomData room_data = 2;
+}
+
+message ExitRoomC2S{
+}
+
+message ExitRoomS2C{
+    int32 code = 1;//成功，游戏已开始
+}
+
+message SitDownC2S{
+    int32 seat = 1;//目标座位
+}
+
+message SitDownS2C{
+    int32 code = 1;//成功，目标有人，游戏已开始
+}
+
+message StandUpC2S{
+}
+
+message StandUpS2C{
+    int32 code = 1;//成功，游戏已开始
+}
+
+message MoveC2S{
+    int32 seat = 1;//目标座位
+}
+
+message MoveS2C{
+    int32 code = 1;//成功，目标有人，游戏已开始
+}
+
+message PlayerUpdateS2C{
+    int32 seat = 1;
+    PlayerData player = 2;
+}
+
+message ObserverArriveS2C{
+    string name = 1;
+}
+
+message ObserverLeaveS2C{
+    string name = 1;
+}
+
+message RoomData{
+    repeated PlayerData players = 1;//座位上的玩家
+    repeated string observers = 2;//观众
+}
+
+message PlayerData{
+    string name = 1;
+    uint64 charater = 2;//角色
+    repeated uint64 weapon = 3;//武器
+}

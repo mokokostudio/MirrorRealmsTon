@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "eeegUpiN3CB/yMgjJ8ZkukpXNK3b4bVFHMJ7APL8+eHf4gFSBTG3JDrzXurWJEbX6Swh5ZAcuwcwFpp2eiguNw==",
+  "success": true,
+  "projectFilePath": "E:\\MirrorRealmsServer\\MirrorRealmsBattleServer\\MirrorRealmsBattleServer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\M\\.nuget\\packages\\kcp\\2.6.1\\kcp.2.6.1.nupkg.sha512",
+    "C:\\Users\\M\\.nuget\\packages\\protobuf-net\\3.2.16\\protobuf-net.3.2.16.nupkg.sha512",
+    "C:\\Users\\M\\.nuget\\packages\\protobuf-net.core\\3.2.16\\protobuf-net.core.3.2.16.nupkg.sha512",
+    "C:\\Users\\M\\.nuget\\packages\\system.collections.immutable\\7.0.0\\system.collections.immutable.7.0.0.nupkg.sha512",
+    "C:\\Users\\M\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

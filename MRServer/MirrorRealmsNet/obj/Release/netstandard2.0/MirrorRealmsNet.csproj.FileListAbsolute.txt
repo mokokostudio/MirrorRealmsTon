@@ -1,0 +1,10 @@
+E:\MirrorRealmsServer\MirrorRealmsNet\bin\Release\netstandard2.0\MirrorRealmsNet.deps.json
+E:\MirrorRealmsServer\MirrorRealmsNet\bin\Release\netstandard2.0\MirrorRealmsNet.dll
+E:\MirrorRealmsServer\MirrorRealmsNet\bin\Release\netstandard2.0\MirrorRealmsNet.pdb
+E:\MirrorRealmsServer\MirrorRealmsNet\obj\Release\netstandard2.0\MirrorRealmsNet.csproj.AssemblyReference.cache
+E:\MirrorRealmsServer\MirrorRealmsNet\obj\Release\netstandard2.0\MirrorRealmsNet.GeneratedMSBuildEditorConfig.editorconfig
+E:\MirrorRealmsServer\MirrorRealmsNet\obj\Release\netstandard2.0\MirrorRealmsNet.AssemblyInfoInputs.cache
+E:\MirrorRealmsServer\MirrorRealmsNet\obj\Release\netstandard2.0\MirrorRealmsNet.AssemblyInfo.cs
+E:\MirrorRealmsServer\MirrorRealmsNet\obj\Release\netstandard2.0\MirrorRealmsNet.csproj.CoreCompileInputs.cache
+E:\MirrorRealmsServer\MirrorRealmsNet\obj\Release\netstandard2.0\MirrorRealmsNet.dll
+E:\MirrorRealmsServer\MirrorRealmsNet\obj\Release\netstandard2.0\MirrorRealmsNet.pdb

@@ -1,0 +1,16 @@
+{
+    "name": "MR.Net.Frame",
+    "rootNamespace": "",
+    "references": [
+        "GUID:e887f54287038304db79ccf1f2c6d1a7"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
