@@ -213,14 +213,14 @@ namespace MR.BattleServer {
             try {
                 using (var http = new HttpClient()) {
                     var content1 = new StringContent("{\"account\":\"" + account + "\",\"password\":\"" + password + "\"}", Encoding.UTF8, "application/json");
-                    var rep1 = await http.PostAsync("https://mirror-realms.io:3000/mrbev1/LoginByPassword", content1);
+                    var rep1 = await http.PostAsync("mrbev1/LoginByPassword", content1);
                     var result1 = await rep1.Content.ReadAsStringAsync();
                     Console.WriteLine(result1);
                     JsonDocument doc1 = JsonDocument.Parse(result1);
                     var token = doc1.RootElement.GetProperty("token").GetString();
                     nickName = doc1.RootElement.GetProperty("account").GetProperty("nickname").GetString();
 
-                    HttpRequestMessage msg = new HttpRequestMessage(HttpMethod.Post, "https://mirror-realms.io:3000/mrbev1/GetAptosNFTsV2");
+                    HttpRequestMessage msg = new HttpRequestMessage(HttpMethod.Post, "mrbev1/GetAptosNFTsV2");
                     msg.Content = new StringContent("{}");
                     msg.Headers.Add("Authorization", "Bearer " + token);
                     var rep2 = await http.SendAsync(msg);
