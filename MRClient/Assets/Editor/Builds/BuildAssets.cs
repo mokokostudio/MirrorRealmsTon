@@ -69,7 +69,7 @@ public static class BuildAssets {
 
     [MenuItem("Tools/Build/HotAssets SyncCloud")]
     public static void SyncCloudAssets() {
-        OssClient client = new OssClient("oss-ap-southeast-1.aliyuncs.com", "LTAI5tGzUxYSsbNLNiRrsQar", "1vucBBdbPJgg37DZRvuu4awewD5zB0");
+        OssClient client = new OssClient("oss-ap-southeast-1.aliyuncs.com", "", "");
         string bucketName;
         switch (EditorUserBuildSettings.activeBuildTarget) {
             case BuildTarget.Android:
